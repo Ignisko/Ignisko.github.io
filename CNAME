@@ -1,0 +1,1 @@
+spol.ski
