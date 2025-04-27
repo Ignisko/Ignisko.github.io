@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    background-color: #e6f4ea;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #b6e388;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 5px solid #89c47d;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+section h2 {
+    color: #388e3c;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #b6e388;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-top: 5px solid #89c47d;
+}
