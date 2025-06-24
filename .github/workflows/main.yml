@@ -9,7 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your code
+      - name: Check out your code
         uses: actions/checkout@v4
 
       - name: Deploy to GitHub Pages
