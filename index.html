@@ -5,47 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iggy spolski</title>
   <style>
+    :root {
+      --bg: #fdfdfd;
+      --text: #1a1a1a;
+      --accent: #00897b;
+      --muted: #666;
+    }
+
     body {
-      font-family: sans-serif;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 0 20px;
-      color: #222;
-      background: #fff;
+      font-family: Georgia, serif;
+      background-color: var(--bg);
+      color: var(--text);
+      max-width: 60ch;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+      line-height: 1.6;
     }
+
     h1, h2 {
-      color: #2c3e50;
+      color: var(--text);
+      font-weight: 400;
+      border-bottom: 1px solid #eaeaea;
+      padding-bottom: 0.2em;
+      margin-top: 2rem;
     }
+
     a {
-      color: #2c3e50;
+      color: var(--accent);
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
-    section {
-      margin-bottom: 2em;
-    }
+
     ul {
       padding-left: 1.2em;
+      list-style: square;
     }
+
+    p, li {
+      font-size: 1rem;
+    }
+
     footer {
       text-align: center;
-      font-size: 0.9em;
-      color: #888;
-      border-top: 1px solid #eee;
-      padding-top: 20px;
-      margin-top: 40px;
+      margin-top: 4rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .header {
+      margin-bottom: 3rem;
     }
   </style>
 </head>
 <body>
-  <h1>iggy spolski</h1>
-  <p>email: <a href="mailto:iggyspolski@gmail.com">iggyspolski@gmail.com</a> &nbsp;&nbsp; github: <a href="https://github.com/Ignisko">@ignisko</a></p>
+  <div class="header">
+    <h1>iggy spolski</h1>
+    <p><a href="mailto:iggyspolski@gmail.com">iggyspolski@gmail.com</a> / <a href="https://github.com/Ignisko">@ignisko</a></p>
+  </div>
 
   <section>
     <h2>about me</h2>
-    <p>i work on tech projects in robotics and engineering. i've done contracting work in malaysia for a major space industry leader. i'm part of a kraków-based team developing an underwater robot and learning a lot. i'm also working on ai-powered image recognition for divers. i'm excited about the ai and robotics revolution and how i can contribute. looking to meet like-minded people to build with.</p>
+    <p>i work on tech projects in robotics and engineering. i've contributed to contractor coordination in malaysia for a major space company, and i'm helping build an underwater robot with a team in kraków. i'm also working on ai-based image recognition tools for divers. excited by the robotics revolution and always looking to collaborate with like-minded people.</p>
   </section>
 
   <section>
@@ -53,17 +76,17 @@
     <ul>
       <li>python, c++, javascript, sql</li>
       <li>embedded systems, git, docker, rest apis</li>
-      <li>image recognition, data processing, robotics fundamentals</li>
-      <li>marketing analytics, multilingual (en/pl/it/de)</li>
+      <li>image recognition, computer vision, robotics fundamentals</li>
+      <li>data processing, electronics, multilingual (en/pl/it/de)</li>
     </ul>
   </section>
 
   <section>
     <h2>projects</h2>
     <ul>
-      <li>contracting support in malaysia (space sector)</li>
+      <li>contracting support in malaysia (space industry)</li>
       <li>underwater robotics project with team in kraków</li>
-      <li>ai image recognition tools for divers</li>
+      <li>ai tools for visual recognition in diving</li>
     </ul>
   </section>
 
