@@ -21,19 +21,13 @@
       margin: 4rem auto;
       padding: 0 1.5rem;
       line-height: 1.6;
-      counter-reset: section;
     }
 
-    h2 {
+    h1, h2 {
       font-weight: 400;
       border-bottom: 1px solid #eaeaea;
       margin-top: 2rem;
       padding-bottom: 0.2em;
-      counter-increment: section;
-    }
-
-    h2::before {
-      content: counter(section, lower-roman) ". ";
     }
 
     a {
