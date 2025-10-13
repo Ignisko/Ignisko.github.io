@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>iggy spolski</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/style.css" />
+  <title>spol.ski</title>
+  <link rel="icon" href="favicon.ico" />
   <style>
     :root {
       --bg: #fdfdfd;
@@ -16,20 +15,25 @@
 
     body {
       font-family: Georgia, serif;
-      background-color: var(--bg);
+      background: var(--bg);
       color: var(--text);
       max-width: 60ch;
       margin: 4rem auto;
       padding: 0 1.5rem;
       line-height: 1.6;
+      counter-reset: section;
     }
 
-    h1, h2 {
-      color: var(--text);
+    h2 {
       font-weight: 400;
       border-bottom: 1px solid #eaeaea;
-      padding-bottom: 0.2em;
       margin-top: 2rem;
+      padding-bottom: 0.2em;
+      counter-increment: section;
+    }
+
+    h2::before {
+      content: counter(section, lower-roman) ". ";
     }
 
     a {
@@ -39,15 +43,6 @@
 
     a:hover {
       text-decoration: underline;
-    }
-
-    ul {
-      padding-left: 1.2em;
-      list-style: square;
-    }
-
-    p, li {
-      font-size: 1rem;
     }
 
     footer {
@@ -60,31 +55,34 @@
     .header {
       margin-bottom: 3rem;
     }
+
+    p {
+      margin: 0.5em 0;
+    }
   </style>
 </head>
 <body>
   <div class="header">
-    <h1>iggy spolski</h1>
-    <p><a href="mailto:iggyspolski@gmail.com">iggyspolski@gmail.com</a> / <a href="https://github.com/Ignisko">@ignisko</a></p>
+    <h1>spol.ski</h1>
+    <p>exploring, building, thinking</p>
   </div>
 
   <section>
-    <h2>about</h2>
-    <p>i’m iggy. i’ve built small ventures — a laundry system, a surfboard rental, and tools for contractors. i’ve done some space-related contract work in malaysia and learn more how to make an underwater robot with a local crew. i care about creating simple, durable tech — starting with ai tools for divers, and moving toward systems that help blue collar teams do more with less.</p>
+    <h2>personal values</h2>
+    <p>speed over perfection</p>
+    <p>utility over show</p>
+    <p>curiosity over comfort</p>
+    <p>independence over approval</p>
   </section>
 
   <section>
-    <h2>crew</h2>
-    <p>i’m looking for engineers who ship. robotics tinkerers. ai people who want to work with hardware and real-world data, not just prompts. no overengineering, no ego. if you care about building useful tools with speed and purpose — reach out.</p>
-  </section>
-
-  <section>
-    <h2>projects & interests</h2>
-    <p>current work includes underwater robotics, diver vision systems, and human-ai workflows for contractors. interests: tough tech, deep water and design. i like working with good people on things that matter.</p>
+    <h2>contact</h2>
+    <p>if you build, tinker, or explore, reach out</p>
+    <p><a href="mailto:iggyspolski@gmail.com">iggyspolski@gmail.com</a> / <a href="https://github.com/Ignisko">@ignisko</a></p>
   </section>
 
   <footer>
-    &copy; mmxxv iggy spolski
+    &copy; mmxxv spol.ski
   </footer>
 </body>
 </html>
