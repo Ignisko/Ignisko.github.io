@@ -1,85 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Personal website of Ignacio Spolski - exploring, building, and thinking about technology, space, and the oceans." />
+  <meta property="og:title" content="spol.ski - Ignacio Spolski" />
+  <meta property="og:description" content="Exploring, building, thinking - personal site of a builder and tinkerer." />
+  <meta property="og:type" content="website" />
   <title>spol.ski</title>
   <link rel="icon" href="favicon.ico" />
-  <style>
-    :root {
-      --bg: #fdfdfd;
-      --text: #1a1a1a;
-      --accent: #00897b;
-      --muted: #666;
-    }
-
-    body {
-      font-family: Georgia, serif;
-      background: var(--bg);
-      color: var(--text);
-      max-width: 60ch;
-      margin: 4rem auto;
-      padding: 0 1.5rem;
-      line-height: 1.6;
-    }
-
-    h1, h2 {
-      font-weight: 700;
-      border-bottom: 1px solid #eaeaea;
-      margin-top: 2rem;
-      padding-bottom: 0.2em;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 4rem;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    .header {
-      margin-bottom: 3rem;
-    }
-
-    p {
-      margin: 0.5em 0;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
+
 <body>
-  <div class="header">
-    <h1>spol.ski</h1>
-    <p>exploring, building, thinking</p>
+  <!-- Dark Mode Toggle -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <div class="container">
+    <header class="header fade-in">
+      <h1>spol.ski</h1>
+      <p class="tagline" id="tagline"></p>
+    </header>
+
+    <section class="section fade-in">
+      <h2>growing ideas</h2>
+      <ul class="ideas-list">
+        <li>luke 6:43 works for tech too</li>
+        <li>space exploration + protecting oceans > deep sea mining</li>
+        <li>share values + build useful things + keep some self-distance = worth pursuit</li>
+        <li>μακρόθυμος, take a deep dive, stay curious, love the process</li>
+      </ul>
+    </section>
+
+    <section class="section fade-in">
+      <h2>contact</h2>
+      <p>if you build, tinker, or explore, reach out:</p>
+      <div class="contact-links">
+        <a href="mailto:iggyspolski@gmail.com" class="contact-link" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+          <span>iggyspolski@gmail.com</span>
+        </a>
+        <a href="https://calendly.com/ignacyjanuszek/three7s" target="_blank" rel="noopener noreferrer"
+          class="contact-link" aria-label="Schedule a meeting">
+          <i class="fas fa-calendar"></i>
+          <span>schedule a call</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="fade-in">
+      <p>&copy; mmxxv spol.ski</p>
+      <div class="fish-container">
+        <pre class="fish" id="fish">>((('></pre>
+      </div>
+    </footer>
   </div>
 
-  <section>
-    <h2>growing ideas</h2>
-    <p>luke 6:43 works for tech too</p>
-    <p>space exploration + protecting oceans > deep sea mining</p>
-    <p>share values + build useful things + keep some self-distance = worth pursuit</p>
-    <p>μακρόθυμος, take a deep dive, stay curious, love the process</p>
-  </section>
-
-  <section>
-    <h2>contact</h2>
-    <p>if you build, tinker, or explore, reach out: </p>
-    <p><a href="mailto:iggyspolski@gmail.com">iggyspolski@gmail.com</a> / <a href="https://github.com/Ignisko">@ignisko</a></p>
-  </section>
-
-  <footer>
-    &copy; mmxxv spol.ski
-    <pre style="margin-top:0.5em; font-family: monospace;">><((('></pre>
-  </footer>
-
+  <script src="script.js"></script>
 </body>
-  
+
 </html>
